@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700%7CMontserrat:300" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <link href="styles.css" rel="stylesheet">
+        <script src="scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Collection
+        </title>
+    </head>
+    <body>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="collection.html">Collection</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mybonsai.html">Choose</a>
+            </li>
+        </ul>
+        <h1 class="rightened inside">
+            Categories
+        </h1>
+        <h2 class="rightened inside">
+            of
+        </h2>
+        <h2 class="rightened inside">
+            Bonsai
+        </h2>
+        <!-- Based on https://medium.com/@nerdplusdog -s modal idea -->
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+            </div>
+        </div>
+        <div class="container rightened">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div id="aigh" class="card h-100" onclick="load(this)">
+                                <img src="bns/bns1.jpg" class="card-img-top" alt="Vine maple">
+                                <div class="card-body">
+                                    <h5 class="card-title images">Vine maple</h5>
+                                    <p class="card-text">Various birds and mammals eat the seeds of this species.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" onclick="load(this)">
+                                <img src="bns/bns2.jpg" class="card-img-top" alt="Hornbeam">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hornbeam</h5>
+                                    <p class="card-text">The common English name hornbeam derives from the hardness of the woods (likened to horn)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" onclick="load(this)">
+                                <img src="bns/bns3.jpg" class="card-img-top" alt="Cedar">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cedar</h5>
+                                    <p class="card-text">They are native to the mountains of the western Himalayas and the Mediterranean region</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100" onclick="load(this)">
+                                <img src="bns/bns4.jpg" class="card-img-top" alt="Dwarf Japanese Garden Juniper">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dwarf Japanese Garden Juniper</h5>
+                                    <p class="card-text">The status of Juniperus procumbens as a wild plant is disputed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
