@@ -6,6 +6,100 @@ https://www.bonsaitreegardener.net/
 */
 
 
+/* START NEW */
+
+*{
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+}
+.img-area{
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 20%, #000 80%), url('main.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.index-title{
+    font-size:50px;
+    font-family: 'Lora', serif;
+    font-weight: 300;
+    margin-top:30px;
+    margin-left:auto;
+    text-align: center;
+}
+.navitems{
+    z-index: 2;
+    padding: 0 0;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-weight: bold;
+}
+.navitems a{
+    display: inline-block;
+    border: 2px solid #fff;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    transition: all .5s ease;
+}
+
+.content{
+
+    top: 50%;
+    left: 50%;
+    width: fit-content;
+    height: fit-content;
+    padding: 50px 0;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: bold;
+    border: 0.5px inset #fff;
+    float: right;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    margin-top: 5vw;
+}
+
+.content p{
+    padding: 0 8%;
+    line-height: 2;
+    color: #adadad;
+}
+
+.content a{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 2px solid #fff;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    margin-right: 30px;
+    margin-left: 30px;
+    transition: all .5s ease;
+}
+
+.content a:hover{
+    background: #fff;
+    color: #262626;
+}
+.logo{
+
+}
+
+
+/* END NEW */
+
+
+
 
 /* Homepage specific selection */
 #home
@@ -16,12 +110,12 @@ https://www.bonsaitreegardener.net/
     background-position: top right;
 }
 
-/* Background for remaining pages */
+/* Background for remaining pages
 body
 {
     background-image:linear-gradient(75deg, rgba(0, 0, 0, 0) 40%, white 40%), url('bonsai.jpg');
 }
-
+*/
 .title
 {
     font-size:50px;
@@ -51,13 +145,17 @@ a:hover
     color:black;
 }
 
+
+
 .nav > li > a:hover{
-    background-color:#99c7ab;
+    background-color: #fff;
     color:black;
 }
 .nav
 {
-    background-color:white;
+    background-color:transparent;
+    color: black;
+
 }
 
 /* Title and paragraph modifying */
@@ -72,9 +170,13 @@ h1
 }
 h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: bold;
+
     text-transform: uppercase;
     margin-left: 30px;
+    margin-right: 30px;
+    color: #fff;
+    text-align: center;
 }
 .rightened
 {
@@ -191,20 +293,20 @@ h2, h3, h4, h5, h6 {
 
 /* Setup for smaller screen */
 @media only screen and (max-width: 1200px) {
-    body
-    {
-        background-image:none;
-        background-color:white;
-    }
+
     #home
     {
         background-image:none;
         background-color:white;
     }
+
+    /*
     .nav
     {
         background-color: #99c7ab;
     }
+
+     */
     .chunk
     {
         width: 100%;
@@ -230,7 +332,7 @@ h2, h3, h4, h5, h6 {
 
     h1
     {
-        font-size:50px;
+        font-size:10px;
     }
     h2, h3, h4, h5, h6 {
         text-align:left;
@@ -253,6 +355,42 @@ h2, h3, h4, h5, h6 {
     .card
     {
         width:250px;
+    }
+
+    .content{
+
+        z-index: 2;
+        top: 0%;
+        left: 0%;
+        transform: translate(0%, 10%);
+        width: fit-content;
+        height: fit-content;
+        padding: 0 0;
+        text-align: right;
+
+        background-color: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        font-weight: bold;
+        border: 0.5px inset #fff;
+        }
+
+    .content p{
+        padding: 0 8%;
+        line-height: 2;
+        color: #adadad;
+    }
+
+    .content a{
+        display: inline-block;
+        padding: 10px 50px;
+        border: 2px solid #fff;
+        font-size: 18px;
+        text-decoration: none;
+        color: #fff;
+        margin-top: 15px;
+        margin-right: 30px;
+        margin-left: 30px;
+        transition: all .5s ease;
     }
 }
 
