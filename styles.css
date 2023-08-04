@@ -376,10 +376,6 @@ h2, h4 {
     margin-top:60px;
 }
 
-.row {
-
-}
-
 /* Same shadow effect like by accordion */
 .card:hover
 {
@@ -419,7 +415,7 @@ h2, h4 {
 
 
     html {
-        font-size: small;
+        display: flex;
     }
 
 
