@@ -91,9 +91,10 @@ body, html{
 }
 .img-area{
     background-image: url('flowers.jpg');
+    background-repeat: repeat;
     background-size: cover;
-    height: 100%;
-    width: auto;
+    height: 100vh;
+    width: 100%;
 }
 .grey-background{
   background-image: url('greybckgrnd.jpg');
@@ -183,25 +184,23 @@ a:hover
     color: #99c7ab;
 }
 
+
 /* Navbar items */
-
-.nav-link
-{
-    color:black;
-}
-
-
-
-.nav > li > a:hover{
-    background-color: #fff;
-    color:black;
-}
-.nav
-{
-    background-color:transparent;
+.nav-link {
     color: black;
-
 }
+
+.nav > li > a:hover,
+.nav > li > a.active {  /* Hozzáadtuk az active állapotot */
+    background-color: #fff;
+    color: black;
+}
+
+.nav {
+    background-color: transparent;
+    color: black;
+}
+
 
 li {
     text-align: left;
