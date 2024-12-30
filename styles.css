@@ -506,7 +506,7 @@ footer {
     display: flex;
     gap: 40px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    min-height: 550px; /* Minimális magasság */
+    min-height: 350px; /* Minimális magasság */
     width: 100%; /* Szélesség */
     max-width: 900px; /* Maximális szélesség */
 }
