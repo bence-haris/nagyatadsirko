@@ -562,3 +562,37 @@ footer {
     color: #333;
     line-height: 1.6;
 }
+
+/* Mobile Responsive */
+@media screen and (max-width: 480px) {
+    .contact-container {
+        padding: 15px;
+    }
+    
+    .contact-content {
+        padding: 20px;
+        gap: 20px;
+        min-height: auto;
+    }
+    
+    .map-container {
+        min-height: 250px;
+    }
+    
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    
+    .address {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .opening-hours,
+    .appointment-info,
+    .contact-person {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
