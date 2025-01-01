@@ -55,6 +55,24 @@ if (window.addEventListener) {
   addEventListener("scroll", checkForVisibility, false);
 }
 
+section = 1;
+page = window.location.href.split("/").at(-1);
+heights = [0,window.innerHeight,2*window.innerHeight,3*window.innerHeight]
+// About us scroll to content
+if (page == "aboutus.html"){
+  window.onload = function() {
+    window.scrollTo({
+      left: 0,
+      top: window.innerHeight,
+      behavior: "smooth"
+    });
+  };
+
+  
+}
+
+
+
 // Navigation: Compares nav-links to actual site: if a nav-link matches => this link is active
 $(document).ready(function(){
     let links = document.getElementsByClassName('nav-link');

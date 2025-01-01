@@ -67,6 +67,9 @@ button:hover{
 .bg3 {
   background-color: #4f4f4f;
 }
+.bg4 {
+    background-color: #000000;
+}
 
 .revealUp {
   opacity: 0;
@@ -454,6 +457,7 @@ p {
 /* Footer */
 
 footer {
+
     background-color: #f8f8f8; /* Footer háttérszíne */
     padding: 20px 0; /* Felső és alsó margó */
 }
